@@ -1,0 +1,19 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 🌗 Universal transition for smooth dark/light switch */
+* {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* ===== Global Layout ===== */
+html,
+body {
+  @apply min-h-screen text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800;
+  @apply font-sans antialiased scroll-smooth;
+}
+
+/* Default padding & margin structure for pages */
+body {
+  @apply px-4 md:px-12 lg:px-24 py-8 md:py-12;
+}
